@@ -4,7 +4,7 @@
 <title>Password</title>
 <style>
 body{
-background -color:light gray;
+background -color:blue
 padding:30px;
 }
 </style>
@@ -19,14 +19,17 @@ padding:30px;
 <script>
   function checkpassword() {
 
-  var password=document.getElementById("passwordbox")
-  var passwordtext= password.value
-  if(passwordtext=="sushimonster") {
-    window.location = "/Blastro.net%20TAKE%20OFF%20TO%20THE%20STARS!.htm"
-    return true;
-}
-alert("Access denied! Incorrect password!");
-return false;}
+    var password=document.getElementById("passwordbox")
+    var passwordtext= password.value
+    if(passwordtext=="sushimonster") {
+      window.location = "/Blastro.net%20TAKE%20OFF%20TO%20THE%20STARS!.htm"
+      return true;
+    }
+    alert("Access denied! Incorrect password!");
+    password.value = "";
+    return false;
+  }
+
 </script>
 
 </body>
